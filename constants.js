@@ -1,12 +1,12 @@
 var constants = angular.module('constants', []);
 
-constants.value('selectItems', [
+constants.value('luckyNumbers', [
 	{
-		id: 7,
-		label: 'seven'
+		number: 7,
+		text: 'seven'
 	},
 	{
-		id: 11,
-		label: 'eleven'
+		number: 11,
+		text: 'eleven'
 	}
 ])

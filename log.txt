@@ -45,8 +45,10 @@ https://docs.angularjs.org/tutorial/step_11
 
 https://docs.angularjs.org/guide/forms
 
+9) add confirm page
 
 ---------
 next
 use protractor for e2e tests
 use compass for css compilation
+array.find() is not cross browser compatible
