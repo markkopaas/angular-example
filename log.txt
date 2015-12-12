@@ -49,8 +49,14 @@ https://docs.angularjs.org/guide/forms
 
 10) directive for tab-bar
 
+https://docs.angularjs.org/guide/directive
+
+11) directive for navigatin bar
+
+
+
 ---------
-next
+use to
 use protractor for e2e tests
 use compass for css compilation
 array.find() is not cross browser compatible

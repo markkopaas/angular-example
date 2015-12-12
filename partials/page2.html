@@ -1,11 +1,11 @@
 <div>
     <form name="page">
-        <div>e-mail: <input type="email" name="email" ng-model="ctrl.data.email" required/></div>
+        <div>E-mail: <input type="email" name="email" ng-model="ctrl.data.email" required/></div>
         <div>
             <span class="error" ng-show="page.email.$error.required">Required!</span>
             <span class="error" ng-show="page.email.$error.email">Not valid email!</span>
         </div>
-        <div>gender: <input type="radio" ng-model="ctrl.data.gender" value="male" />male
+        <div>Gender: <input type="radio" ng-model="ctrl.data.gender" value="male" />male
         <input type="radio" ng-model="ctrl.data.gender" value="female" />female</div>
     </form>
 </div>
