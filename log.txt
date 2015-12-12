@@ -44,7 +44,9 @@ https://docs.angularjs.org/tutorial/step_07
 
 https://docs.angularjs.org/tutorial/step_11
 
+8) add more data pages
 
+https://docs.angularjs.org/guide/forms
 
 
 ---------
