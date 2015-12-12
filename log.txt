@@ -15,4 +15,40 @@ http://lmgtfy.com/?q=how+to+install+angularjs+with+bower
 google> how to install angularjs with bower
 https://github.com/angular/bower-angular
 
+<<<<<<< HEAD
 > bower init
+=======
+> bower install angular
+
+3) Angular "hello world"
+
+https://docs.angularjs.org/tutorial/step_02
+
+4) git repo
+git init
+git add index.html log.txt main.js .gitignore
+git commit
+
+5) install simplest possible http fileserver
+
+> npm install http-server -g
+> http-server
+
+6) make a template and controller for the first page.
+
+https://docs.angularjs.org/tutorial/step_07
+
+> bower install angular-route
+
+7) create formData service for keeping data
+
+https://docs.angularjs.org/tutorial/step_11
+
+
+
+
+---------
+next
+use protractor for e2e tests
+use compass for css compilation
+>>>>>>> add form data service and rename controllers module
