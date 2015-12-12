@@ -6,6 +6,7 @@ services.factory('formData', function () {
   		text1: 'default1',
   		text2: 'default2',
   		email: 'chan@ge.me',
-  		gender: 'female'
+  		gender: 'female',
+  		choose: 7
   	};
 });
