@@ -1,0 +1,18 @@
+1) Plan
+
+decision to use the simplest tools that I have used before.
+
+bower for dependency management
+gulp for build
+use of bare css - keeping it as simple and standard is a good basis for UI designers to build on.
+
+use google for everything
+
+describe the actual steps
+
+2) Install angular
+http://lmgtfy.com/?q=how+to+install+angularjs+with+bower
+google> how to install angularjs with bower
+https://github.com/angular/bower-angular
+
+> bower init
