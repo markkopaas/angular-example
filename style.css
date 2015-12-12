@@ -1,0 +1,5 @@
+tabs span {margin: 10px;}
+
+.activetab {
+    font-weight: bold;
+}

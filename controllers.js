@@ -11,10 +11,6 @@ controllers.controller('page2Ctrl', function (formData) {
 controllers.controller('page3Ctrl', function (formData, luckyNumbers) {
   	this.data = formData;
   	this.luckyNumbers = luckyNumbers;
-
-  	this.log = function () {
-  		console.log(this.data)
-  	}
 });
 
 controllers.controller('pageConfirmCtrl', function (formData, luckyNumbers) {

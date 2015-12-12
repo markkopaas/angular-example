@@ -47,6 +47,8 @@ https://docs.angularjs.org/guide/forms
 
 9) add confirm page
 
+10) directive for tab-bar
+
 ---------
 next
 use protractor for e2e tests
