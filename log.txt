@@ -15,9 +15,6 @@ http://lmgtfy.com/?q=how+to+install+angularjs+with+bower
 google> how to install angularjs with bower
 https://github.com/angular/bower-angular
 
-<<<<<<< HEAD
-> bower init
-=======
 > bower install angular
 
 3) Angular "hello world"
@@ -53,4 +50,3 @@ https://docs.angularjs.org/guide/forms
 next
 use protractor for e2e tests
 use compass for css compilation
->>>>>>> add form data service and rename controllers module
