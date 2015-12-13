@@ -1,10 +1,10 @@
 Simplest possible example of angularjs
 
-Prebuilt
+Prebuilt version:
 
-	https://github.com/markkopaas/angular-example/build
+	<https://markkopaas.github.io/angular-example/build>
 
-Install and build
+Install and build:
 
 	npm i
 
@@ -15,6 +15,6 @@ Use any http server, for example this tiny little gem:
 
 Now you can browse your app:
 
-	http://localhost:8080
+	<http://localhost:8080>
 or
-	http://localhost:8080/build
+	<http://localhost:8080/build>
