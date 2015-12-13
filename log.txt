@@ -55,14 +55,18 @@ https://docs.angularjs.org/guide/directive
 
 12) refactor directives to be more clear and also ready for minification
 
-12) organize code - put app scripts to javascripts directory
+12) organize code 
+
+put app scripts to javascripts directory
 
 13) build tools
+
+use npm instead of bower for managing dependencies
+use gulp for building
+
 
 
 TODO
 ---------
 unit tests
-use protractor for e2e tests
-use compass for css compilation
-array.find() is not compatible with all browsers
+e2e tests
