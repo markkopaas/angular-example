@@ -1,0 +1,23 @@
+{
+  "name": "angular-example",
+  "version": "0.0.1",
+  "description": "simplest possible example of angular",
+  "author": "Markko Paas<markko.paas@gmail.com>",
+  "keywords": [
+    "angular",
+    "example"
+  ],
+  "scripts": {
+    "postinstall": "node_modules/.bin/gulp"
+  },
+  "dependencies": {
+    "angular": "^1.4.8",
+    "angular-route": "^1.4.8",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-html-replace": "^1.5.5",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.5.1"
+  },
+  "license": "MIT"
+}
