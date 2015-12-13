@@ -6,8 +6,8 @@ constants.value('luckyNumbers', [
 ])
 
 constants.value('tabs', [
-	{path: 'page1', label: 'Personal'},
-	{path: 'page2', label: 'Deeply private'},
-	{path: 'page3', label: 'Important'},
-	{path: 'pageConfirm', label: 'Confirm'}
+	{path: '/page1', label: 'Personal'},
+	{path: '/page2', label: 'Deeply private'},
+	{path: '/page3', label: 'Important'},
+	{path: '/pageConfirm', label: 'Confirm'}
 ]);

@@ -51,7 +51,7 @@ https://docs.angularjs.org/guide/forms
 
 https://docs.angularjs.org/guide/directive
 
-11) directive for navigatin bar
+11) directive for navigation bar
 
 
 
