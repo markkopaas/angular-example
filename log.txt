@@ -53,6 +53,10 @@ https://docs.angularjs.org/guide/directive
 
 11) directive for navigation bar
 
+12) refactor directives to be more clear and also ready for minification
+
+12) organize code - put app scripts to javascripts directory
+
 
 
 ---------
