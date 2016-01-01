@@ -1,0 +1,23 @@
+<html ng-app="exampleApp">
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular-route.js"></script>
+  <!-- build:js -->
+  <script src="app.js"></script>
+  <script src="page1/controller.js"></script>
+  <script src="page2/controller.js"></script>
+  <script src="page3/controller.js"></script>
+  <script src="page-confirm/controller.js"></script>
+  <script src="common/services/form-data.js"></script>
+  <script src="common/constants.js"></script>
+  <script src="common/directives/tabs.js"></script>
+  <script src="common/directives/navigation.js"></script>
+  <!-- endbuild -->
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<tabs></tabs>
+<div ng-view class="tab-body"></div>
+<navigation></navigation>
+</body>
+</html>

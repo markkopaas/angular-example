@@ -1,7 +1,6 @@
-
-var services = angular.module('services', []);
-
-services.factory('formData', function () {
+angular.module('exampleApp')
+.factory('formData', function () {
+    //initialized with default values
     return {
         text1: 'default1',
         text2: 'default2',

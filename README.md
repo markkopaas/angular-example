@@ -11,4 +11,4 @@ Use any http server, for example this tiny little gem:
 	npm i http-server -g
 	http-server
 
-Now you can browse your app on [http://localhost:8080](http://localhost:8080) or [http://localhost:8080/build](http://localhost:8080/build)
+Now you can browse your app on [http://localhost:8080/src](http://localhost:8080) or [http://localhost:8080/build](http://localhost:8080/build)
