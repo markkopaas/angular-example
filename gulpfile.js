@@ -1,5 +1,4 @@
 var gulp = require('gulp');
-var path = require('path');
 var concat = require('gulp-concat');
 var rename = require('gulp-rename');
 var uglify = require('gulp-uglify');
@@ -11,18 +10,12 @@ gulp.task('default', function() {
 });
 
 
-var scriptsPath = 'javascript';
 var destinationPath = 'build';
 
-gulp.task('default', ['javascriptBundle', 'htmlReplace', 'style', 'partials']);
+gulp.task('default', ['javascriptBundle', 'htmlReplace', 'style', 'copy', 'partials']);
 
 gulp.task('javascriptBundle', function() {
-    return gulp.src(
-        [
-            'node_modules/angular/angular.js',
-            'node_modules/angular-route/angular-route.js',
-            path.join(scriptsPath,'/**/*.js')
-        ])
+    return gulp.src('javascript/**/*.js')
         .pipe(concat('bundle.js'))
         .pipe(uglify())
         .pipe(rename('bundle.min.js'))
@@ -39,6 +32,11 @@ gulp.task('htmlReplace', function() {
 
 gulp.task('style', function() {
     gulp.src('style.css')
+    .pipe(gulp.dest(destinationPath));
+});
+
+gulp.task('copy', function() {
+    gulp.src('favicon.ico')
     .pipe(gulp.dest(destinationPath));
 });
 

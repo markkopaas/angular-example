@@ -10,10 +10,7 @@
   "scripts": {
     "postinstall": "node_modules/.bin/gulp"
   },
-  "dependencies": {
-    "angular": "^1.4.8",
-    "angular-route": "^1.4.8"
-  },
+  "dependencies": {},
   "license": "MIT",
   "devDependencies": {
     "eslint": "^1.10.3",
