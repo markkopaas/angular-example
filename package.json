@@ -12,12 +12,16 @@
   },
   "dependencies": {
     "angular": "^1.4.8",
-    "angular-route": "^1.4.8",
+    "angular-route": "^1.4.8"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^1.10.3",
     "gulp": "^3.9.0",
     "gulp-concat": "^2.6.0",
+    "gulp-eslint": "^1.1.1",
     "gulp-html-replace": "^1.5.5",
     "gulp-rename": "^1.2.2",
     "gulp-uglify": "^1.5.1"
-  },
-  "license": "MIT"
+  }
 }

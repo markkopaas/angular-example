@@ -3,7 +3,7 @@ var exampleApp = angular.module('exampleApp', [
 
 exampleApp.config(['$routeProvider', 
     function($routeProvider) {
-    $routeProvider
+        $routeProvider
         .when('/page1', {
             templateUrl: 'partials/page1.html',
             controller: 'page1Ctrl',
