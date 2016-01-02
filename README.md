@@ -6,6 +6,10 @@ Install and build:
 
 	npm i
 
+Test
+
+    npm t
+
 Use any http server, for example this tiny little gem:
 
 	npm i http-server -g

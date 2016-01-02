@@ -1,14 +1,20 @@
 angular.module('exampleApp')
 .controller('pageConfirmCtrl', 
-    ['formData', 'luckyNumbers', 
-    function (formData, luckyNumbers) {
-        var selectedLuckyNumber =  luckyNumbers.find(function (luckyNumber) {
-            return luckyNumber.number === formData.luckyNumber;
-        });
+    ['$scope','formData', 'luckyNumbers', 
+    function ($scope, formData, luckyNumbers) {
+        var self = this;
 
         this.data = formData;
-        if (selectedLuckyNumber) {
-            this.luckyNumberText = selectedLuckyNumber.text;
-        }
+
+        $scope.$on('$routeChangeSuccess', function () {
+            self.luckyNumberText = '';
+
+            for (var i = 0; i<luckyNumbers.length; i++) {
+                if(luckyNumbers[i].number === formData.luckyNumber) {
+                    self.luckyNumberText = luckyNumbers[i].text;
+                    break;
+                }
+            }
+        });
     }
 ]);

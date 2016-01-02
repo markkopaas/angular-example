@@ -1,5 +1,4 @@
 var gulp = require('gulp');
-var path = require('path');
 var concat = require('gulp-concat');
 var rename = require('gulp-rename');
 var uglify = require('gulp-uglify');
@@ -13,10 +12,10 @@ gulp.task('default', function() {
 
 var destinationPath = 'build';
 
-gulp.task('default', ['javascriptBundle', 'htmlReplace', 'style', 'copy', 'templates']);
+gulp.task('default', ['javascriptBundle', 'htmlReplace', 'style', 'templates']);
 
 gulp.task('javascriptBundle', function() {
-    return gulp.src('src/**/*.js')
+    return gulp.src(['src/**/*.js','!src/**/*.test.js'])
         .pipe(concat('bundle.js'))
         .pipe(uglify())
         .pipe(rename('bundle.min.js'))
@@ -36,17 +35,10 @@ gulp.task('style', function() {
     .pipe(gulp.dest(destinationPath));
 });
 
-gulp.task('copy', function() {
-    gulp.src(['src/favicon.ico'])
-    .pipe(gulp.dest(destinationPath));
-});
-
 gulp.task('templates', function() {
     gulp.src('src/**/*.tpl.html')
     .pipe(gulp.dest(destinationPath));
 });
-
-
 
 gulp.task('lint', function () {
     // ESLint ignores files with "node_modules" paths.

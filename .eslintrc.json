@@ -19,7 +19,13 @@
     },
     "globals": {
         "require": false,
-        "angular": false
+        "angular": false,
+        "module": false,
+        "inject": false,
+        "describe": false,
+        "it": false,
+        "expect": false,
+        "beforeEach": false
     },
     "env": {
         "browser": true
