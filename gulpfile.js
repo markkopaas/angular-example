@@ -12,7 +12,6 @@ gulp.task('default', function() {
 
 var destinationPath = 'build';
 
-gulp.task('default', ['javascriptBundle', 'htmlReplace', 'style', 'templates']);
 
 gulp.task('javascriptBundle', function() {
     return gulp.src(['src/**/*.js','!src/**/*.test.js'])
@@ -23,7 +22,7 @@ gulp.task('javascriptBundle', function() {
 });
 
 gulp.task('htmlReplace', function() {
-    gulp.src('src/index.html')
+    return gulp.src('src/index.html')
     .pipe(htmlreplace({
         'js': 'bundle.min.js'
     }))
@@ -31,14 +30,16 @@ gulp.task('htmlReplace', function() {
 });
 
 gulp.task('style', function() {
-    gulp.src('src/style.css')
+    return gulp.src('src/style.css')
     .pipe(gulp.dest(destinationPath));
 });
 
 gulp.task('templates', function() {
-    gulp.src('src/**/*.tpl.html')
+    return gulp.src('src/**/*.tpl.html')
     .pipe(gulp.dest(destinationPath));
 });
+
+gulp.task('default', gulp.series('javascriptBundle', 'htmlReplace', 'style', 'templates'));
 
 gulp.task('lint', function () {
     // ESLint ignores files with "node_modules" paths.
