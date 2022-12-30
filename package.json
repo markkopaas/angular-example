@@ -34,7 +34,7 @@
     "karma-mocha": "^0.2.1",
     "karma-phantomjs-launcher": "^1.0.4",
     "lodash.template": "^4.5.0",
-    "mocha": "^6.2.0",
+    "mocha": "^10.2.0",
     "phantomjs": "^2.1.7",
     "tough-cookie": "^2.3.4"
   }
